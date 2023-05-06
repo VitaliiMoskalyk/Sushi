@@ -1,0 +1,50 @@
+.circle_animation {
+    position: relative;
+    width: pxToRem(352px);
+    height: pxToRem(352px);
+    z-index: -1;
+    animation: round 8s linear infinite;
+
+    :first-child {
+        position: absolute;
+        width: pxToRem(352px);
+        height: pxToRem(352px);
+        background-color: $contrast2;
+        border-radius: 50%;
+    }
+
+    :nth-child(2) {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: pxToRem(237px);
+        height: pxToRem(237px);
+        background-color: $contrast2;
+        border-radius: 50%;
+        border: 1px solid $contrast ;
+    }
+
+    :nth-child(3) {
+        position: absolute;
+        top: 57px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: pxToRem(14px);
+        height: pxToRem(14px);
+        background-color: $lightest;
+        border-radius: 50%;
+    }
+}
+
+
+@keyframes round {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+
+}

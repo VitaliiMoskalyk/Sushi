@@ -1,5 +1,5 @@
 {
-  "name": "sky-cloud",
+  "name": "Sushi",
   "version": "1.0.0",
   "description": "simple landing ,GULP interacting",
   "main": "gulpfile.js",
@@ -13,14 +13,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/VitaliiMoskalyk/SKY-Cloud.git"
+    "url": "git+https://github.com/VitaliiMoskalyk/Sushi.git"
   },
   "author": "VitaliiMoskalyk",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/VitaliiMoskalyk/SKY-Cloud/issues"
+    "url": "https://github.com/VitaliiMoskalyk/Sushi/issues"
   },
-  "homepage": "https://github.com/VitaliiMoskalyk/SKY-Cloud#readme",
+  "homepage": "https://github.com/VitaliiMoskalyk/Sushi",
   "devDependencies": {
     "browser-sync": "^2.29.1",
     "del": "^7.0.0",

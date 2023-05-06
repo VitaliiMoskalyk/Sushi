@@ -4,7 +4,7 @@
 
   <body>
     @@include('html/header.html',{})
-    <main>
+    <main class="scroll-container">
       <section class="content-section horisontal-scrolling">
         <div class="horisontal-scrolling__track">
           <div class="horisontal-scrolling__track-flex">
@@ -69,11 +69,10 @@
       <section class="content-section">
         <div class="wrapper">
           <div class="main">
-            <div class="circle_animation">
-              <div></div>
-              <div></div>
-              <div></div>
+            <div class="circle-animation__position">
+              @@include('html/circle.html',{})
             </div>
+
             <h1 class="main__title">Sushi</h1>
             <p class="main__dishes"><span>sushi</span>, seafood & salads</p>
             <p class="main_about">
@@ -91,6 +90,7 @@
       <section class="content-section popular">
         <div class="content-container">
           <h2>Popular Product</h2>
+
           <div class="popular__wrapper">
             <div class="popular__card">
               <span class="popular__card-sidebar">sale</span>
@@ -151,6 +151,26 @@
               <button class="popular__card-button" type="button">
                 <img src="@img/svg/cart.svg" alt="" />ADD TO CART
               </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="content-sectiov">
+        <div class="content-container">
+          <div class="advertise-first">
+            <div>
+              <span>category</span>
+              <h3>sea food</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt
+              </p>
+              <a href="#"></a>
+            </div>
+
+            <img src="@img/flying-sushi.png" alt="" />
+            <div class="advertise-first-animation__position">
+              @@include('html/circleTransparent.html',{})
             </div>
           </div>
         </div>

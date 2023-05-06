@@ -7,6 +7,8 @@
     flex-direction: row;
     margin-inline: 20vw;
     align-items: start;
+    justify-content: end;
+    height: fit-content;
     margin-top: pxToRem(208px);
 }
 
@@ -43,54 +45,12 @@
     max-width: pxToRem(280px);
 }
 
-.circle_animation {
+.circle-animation__position{
     position: absolute;
-    top: -80px;
-    left: -60px;
-    z-index: -1;
-    animation: round 8s linear infinite;
-
-    :first-child {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: pxToRem(352px);
-        height: pxToRem(352px);
-        background-color: $contrast2;
-        border-radius: 50%;
-    }
-
-    :nth-child(2) {
-        position: relative;
-        width: pxToRem(237px);
-        height: pxToRem(237px);
-        background-color: $contrast2;
-        border-radius: 50%;
-        border: 1px solid $contrast ;
-
-    }
-
-    :nth-child(3) {
-        position: absolute;
-        top: 70px;
-        width: pxToRem(14px);
-        height: pxToRem(14px);
-        background-color: $lightest;
-        border-radius: 50%;
-
-    }
-}
-
-@keyframes round {
-    from {
-        transform: rotate(0deg);
-    }
-
-    to {
-        transform: rotate(360deg);
-    }
-
+    left: -30%;
+    top:-30%;
+   
+    
 }
 
 .main__button-wrapper {
@@ -115,3 +75,4 @@
         content: url(@img/svg/arrow.svg);
     }
 }
+

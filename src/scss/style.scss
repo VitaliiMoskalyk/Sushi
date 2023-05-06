@@ -10,9 +10,9 @@
     @return math.div($pxValue, 18px) * 1rem;
 }
 
-*{
-    outline: 1px dashed rgba(255, 0, 0, 0.349);
-}
+// *{
+//     outline: 1px dashed rgba(255, 0, 0, 0.349);
+// }
 //General and container settings
 body {
     position: relative;
@@ -25,8 +25,13 @@ body {
     scroll-behavior: smooth;
 }
 
+.scroll-container {
+    overflow: auto;
+    scroll-snap-type: y mandatory;
+}
 .content-section{
     overflow: hidden;
+    scroll-snap-align: start;
 }
 
 .content-container {
@@ -46,13 +51,13 @@ body {
 //Import of styles of components: 
 @import './components/_header';
 @import './components/_about';
+@import './components/_circle';
+@import './components/_circleTransparent';
 @import './components/_horizontalList';
 
 
 ///////
-
 .popular__wrapper{
-   
     display: flex;
     justify-content: space-around;
     gap:pxToRem(20px);
@@ -116,4 +121,22 @@ body {
         line-height:pxToRem(12px) ;
         color: #0000007a;
         transform-origin:top left;  
+}
+
+.advertise-first{
+    position: relative;
+    max-width: pxToRem(683px);
+    background-color: $accent;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.advertise-first-animation__position{
+    position: absolute;
+    width: pxToRem(249px);
+    height: pxToRem(249px);
+    z-index: 2;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%,-50%);
 }
