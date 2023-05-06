@@ -11,22 +11,22 @@
 }
 
 *{
-    outline: 1px dashed red;
+    outline: 1px dashed rgba(255, 0, 0, 0.349);
 }
+//General and container settings
 body {
     position: relative;
-    border: 1px solid rgb(20, 1, 1);
-    background-color: #0a0a0a;
-    color: #FFFFFF;
+    background-color: $background;
+    color: $fonts;
     font-family: Cormorant;
-    min-height: 100vh;
+    min-height: 9 0vh;
     -webkit-overflow-scrolling: touch;
     overflow-scrolling: touch;
     scroll-behavior: smooth;
-
 }
+
 .content-section{
-overflow: hidden;
+    overflow: hidden;
 }
 
 .content-container {
@@ -34,135 +34,86 @@ overflow: hidden;
     width: 100%;
     margin: 0 auto;
     padding:0;
-    overflow: hidden;
-    
+    overflow: hidden; 
 }
+
 /* Full width - break out of parent container */
 .alignfull {
     margin-left: calc(50% - 50vw);
     margin-right: calc(50% - 50vw);
 }
 
-
+//Import of styles of components: 
 @import './components/_header';
+@import './components/_about';
+@import './components/_horizontalList';
 
-.wrapper{
-    position: absolute;
-    z-index: 2;
-    top: 0;
+
+///////
+
+.popular__wrapper{
    
     display: flex;
-    flex-direction: row;
-   margin-inline: 20vw;
-    align-items: start;
-    margin-top: 208px;
-    
-    
-
-
+    justify-content: space-around;
+    gap:pxToRem(20px);
+    flex-wrap: wrap;
+    margin-bottom: pxToRem(156px);
 }
-.main{
+
+.popular__card{
     position: relative;
-    width: fit-content;
     display: flex;
     flex-direction: column;
     align-items: center;
-}
+    width: pxToRem(241px);
+    background: linear-gradient(180deg, transparent 25%, $contrast2 25%);
+    padding: pxToRem(31px);
 
-.main__title{
-    font-weight: 400;
-        font-size:pxToRem(80px) ;
-        line-height:pxToRem(97px);
-        letter-spacing: 0.085em;
-        margin-bottom: pxToRem(39px);
-}
-
-.main__dishes{
-        font-size:pxToRem(65px);
-        line-height:pxToRem(79px);
-        margin-bottom: pxToRem(28px);
-        max-width: pxToRem(347px);
-
-        span{
-            color: $lightest;
-        }
-}
-.main_about{
-        font-size:pxToRem(17px);
-        line-height:pxToRem(21px);
-        max-width: pxToRem(280px);
-}
-
-.circle_animation{
-position: absolute;
-top: -80px;
-left: -60px;
-z-index: -1;
-    :first-child{
-       position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: pxToRem(352px);
-        height: pxToRem(352px);
-        background-color: $contrast2;
-        border-radius: 50%;
+    .popular__card-title{
+        font-weight: 400;
+            font-size:pxToRem(15px) ;
+            line-height:pxToRem(18px) ;
+            color:$fontsSecondary;
+            margin-bottom: pxToRem(5px);
+        
     }
-    :nth-child(2){
-        position: relative;
-            width: pxToRem(237px);
-            height: pxToRem(237px);
-            background-color:$contrast2;
-            border-radius: 50%;
-            border:1px solid $contrast ;
-    }
-    :nth-child(3){
-        position: absolute;
-            top: 70px;
-            width: pxToRem(14px);
-            height: pxToRem(14px);
-            background-color: $lightest;
-            border-radius: 50%;
-           
+    .popular__card-price{
+        font-weight: 500;
+            font-size:pxToRem(14px) ;
+            line-height:pxToRem(17px) ;
+            color: $fonts;
     }
 }
-///////
 
-.sticky-element {
+.popular__card-button{
     display: flex;
-    justify-content: flex-start;
-    align-items: start;
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
-}
-.track {
-    width: fit-content;
-    flex: 0 0 auto;
-}
-.track-flex {
-    
-    display: flex;
-    justify-content: flex-start;
     align-items: center;
-    height: 65vh;
-    margin-inline: 40vw;
-}
-.panel-wide {
-    position: relative;
- 
-    width: 40vw;
-    height: 100%;
-    overflow: hidden;
-    flex: 0 0 auto;
-   
+    gap:pxToRem(4px);
+    flex-direction: row;
+    cursor: pointer;
+    background-color: $fresh;
+    padding: pxToRem(9px) pxToRem(24px);
+    color: $fonts;
+    font-weight: 400;
+        font-size:pxToRem(10px) ;
+        line-height:pxToRem(12px) ;
+        border: none;
 
-    img {
-       
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        // opacity: .25;
-    }
+        position: absolute;
+        bottom: -5%;
 }
 
+.popular__card-sidebar{
+    position: absolute;
+    top:25%;
+    left: 0;
+
+    transform: rotate(270deg) translate(-100%);
+    background-color: $lightest;
+    padding: 0 pxToRem(9px);
+    font-weight: 400;
+        font-size:pxToRem(10px) ;
+        line-height:pxToRem(12px) ;
+        color: #0000007a;
+        transform-origin:top left;  
+}
