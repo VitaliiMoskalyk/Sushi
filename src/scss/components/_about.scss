@@ -71,8 +71,10 @@
     padding: pxToRem(15px) pxToRem(20px);
     color: $background;
 
+    
     &::after {
         content: url(@img/svg/arrow.svg);
+        mix-blend-mode: difference;
     }
 }
 

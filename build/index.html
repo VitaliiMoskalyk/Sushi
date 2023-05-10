@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="css/style.min.css?_v=20230506234512" />
+  <link rel="stylesheet" href="css/style.min.css" />
   <title>Sushi</title>
 </head>
 
@@ -135,88 +135,94 @@
         </div>
       </section>
 
-      <section class="content-section popular">
+      <section class="content-section">
         <div class="content-container">
           <h2>Popular Product</h2>
-
-          <div class="popular__wrapper">
-            <div class="popular__card">
-              <span class="popular__card-sidebar">sale</span>
+          <div class="popular-cards__wrapper">
+            <div class="card">
+              <span class="card__sidebar">sale</span>
               <img
                 src="img/course-3.png"
                 alt="sushi"
                 style="object-fit: contain"
                 height="100%"
               />
-              <h3 class="popular__card-title">Ramen with corn</h3>
+              <h3 class="card__title">Ramen with corn</h3>
               <p>&#11088;&#11088;&#11088;&#11088;</p>
-              <p class="popular__card-price">$9.20</p>
-              <button class="popular__card-button" type="button">
+              <p class="card__price">$9.20</p>
+              <button class="card__button" type="button">
                 <img src="img/svg/cart.svg" alt="sushi" />ADD TO CART
               </button>
             </div>
-            <div class="popular__card">
-              <span class="popular__card-sidebar">sale</span>
+
+            <div class="card">
+              <span class="card__sidebar">sale</span>
               <img
                 src="img/course-4.png"
                 alt="sushi"
                 style="object-fit: contain"
                 height="100%"
               />
-              <h3 class="popular__card-title">Ramen with pork</h3>
+              <h3 class="card__title">Ramen with pork</h3>
               <p>&#11088;&#11088;&#11088;&#11088;</p>
-              <p class="popular__card-price">$19.20</p>
-              <button class="popular__card-button" type="button">
+              <p class="card__price">$19.20</p>
+              <button class="card__button" type="button">
                 <img src="img/svg/cart.svg" alt="sushi" />ADD TO CART
               </button>
             </div>
-            <div class="popular__card">
-              <span class="popular__card-sidebar">sale</span>
+
+            <div class="card">
+              <span class="card__sidebar">sale</span>
               <img
                 src="img/course-5.png"
                 alt="sushi"
                 style="object-fit: contain"
                 height="100%"
               />
-              <h3 class="popular__card-title">Ramen with chicken</h3>
+              <h3 class="card__title">Ramen with chicken</h3>
               <p>&#11088;&#11088;&#11088;&#11088;</p>
-              <p class="popular__card-price">$12.40</p>
-              <button class="popular__card-button" type="button">
+              <p class="card__price">$12.40</p>
+              <button class="card__button" type="button">
                 <img src="img/svg/cart.svg" alt="sushi" />ADD TO CART
               </button>
             </div>
-            <div class="popular__card">
-              <span class="popular__card-sidebar">sale</span>
+
+            <div class="card">
+              <span class="card__sidebar">sale</span>
               <img
                 src="img/course-6.png"
                 alt="sushi"
                 style="object-fit: contain"
                 height="100%"
               />
-              <h3 class="popular__card-title">Ramen with veal</h3>
+              <h3 class="card__title">Ramen with veal</h3>
               <p>&#11088;&#11088;&#11088;&#11088;</p>
-              <p class="popular__card-price">$10.10</p>
-              <button class="popular__card-button" type="button">
+              <p class="card__price">$10.10</p>
+              <button class="card__button" type="button">
                 <img src="img/svg/cart.svg" alt="sushi" />ADD TO CART
               </button>
             </div>
           </div>
         </div>
       </section>
-      <section class="content-sectiov">
-        <div class="content-container">
+
+      <section class="content-section">
+        <div
+          class="content-container"
+          style="display: flex; flex-wrap: wrap; justify-content: center"
+        >
           <div class="advertise-first">
-            <div>
-              <span>category</span>
+            <div class="advertise-first__wrapper">
+              <span class="advertise__category">category</span>
               <h3>sea food</h3>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt
               </p>
-              <a href="#"></a>
+              <a class="advertise-arrow" href="#"></a>
             </div>
 
-            <picture><source srcset="img/flying-sushi.webp" type="image/webp"><img src="img/flying-sushi.png" alt="sushi" /></picture>
+            <img src="img/flying-sushi.png" alt="sushi" />
             <div class="advertise-first-animation__position">
               <div class="circle_animation-transparent">
   <div></div>
@@ -226,9 +232,45 @@
 
             </div>
           </div>
+
+          <div class="advertise-two">
+            <span class="advertise__category__dark">category</span>
+            <div class="advertise-first-animation__position">
+              <div class="circle_animation-light">
+  <div></div>
+  <div></div>
+  <div></div>
+</div>
+
+            </div>
+            <img src="img/sushi-brake.png" alt="sushi" width="100%" />
+            <a class="advertise-arrow__dark" href="#"></a>
+          </div>
+
+          <div class="advertise-two">
+            <span class="advertise__category__dark">category</span>
+
+            <img src="img/goodeats.png" alt="sushi" width="100%" />
+            <a class="advertise-arrow__dark" href="#"></a>
+          </div>
+
+          <div class="advertise-four">
+            <p>hot sushi</p>
+
+            <a class="advertise-arrow" href="#"></a>
+
+            <img src="img/sushi-plate-dark.png" alt="sushi" />
+          </div>
+
+          <div class="advertise-two">
+            <span class="advertise__category__dark">category</span>
+
+            <img src="img/sushiki.png" alt="sushi" width="100%" />
+            <a class="advertise-arrow__dark" href="#"></a>
+          </div>
         </div>
       </section>
     </main>
-    <script src="js/app.min.js?_v=20230506234512"></script>
+    <script src="js/app.min.js"></script>
   </body>
 </html>

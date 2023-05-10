@@ -10,3 +10,15 @@ $fonts:#FFFFFF;
 $fontsSecondary:#D7D7D7;
 
 $bezier: all 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+
+//circles animation
+@keyframes round {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+
+}
