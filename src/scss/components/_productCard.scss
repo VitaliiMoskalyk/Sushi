@@ -1,9 +1,11 @@
 .card {
     position: relative;
     display: flex;
+   
+    flex-basis: 20%;
     flex-direction: column;
     align-items: center;
-    max-width: pxToRem(241px);
+    // max-width: pxToRem(241px);
     background: linear-gradient(180deg, transparent 25%, $contrast2 25%);
     padding: pxToRem(31px);
 

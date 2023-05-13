@@ -10,9 +10,9 @@
     @return math.div($pxValue, 18px) * 1rem;
 }
 
-*{
-    outline: 1px dashed rgba(255, 0, 0, 0.349);
-}
+// *{
+//     outline: 1px dashed rgba(255, 0, 0, 0.349);
+// }
 //General and container settings
 body {
     position: relative;
@@ -62,9 +62,25 @@ body {
     justify-content: space-around;
     gap:pxToRem(20px);
     flex-wrap: wrap;
+   
     margin-bottom: pxToRem(156px);
 }
 
+.advertise{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: start;
+    flex-wrap: wrap;
+   
+}
+
+.advertise__blocks{
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+    align-items: center;
+    justify-content: space-evenly;
+}
 
 .advertise-first{
     position: relative;
@@ -73,6 +89,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    height: fit-content;
 }
 
 .advertise-four {
@@ -81,6 +98,7 @@ body {
     justify-content: space-around;
     flex-wrap: wrap;
     background-color: $contrast2;
+    height: fit-content;
     // padding: pxToRem(25px);
 
     p {
@@ -96,6 +114,7 @@ body {
     position: relative;
     max-width: fit-content;
     background-color: $lightest;
+    height: fit-content;
 }
 
 .advertise-first-animation__position{
