@@ -441,6 +441,10 @@ select {
     transform: rotate(360deg);
   }
 }
+* {
+  outline: 1px dashed rgba(255, 0, 0, 0.349);
+}
+
 body {
   position: relative;
   background-color: #060606;
@@ -797,6 +801,8 @@ header .header__menu-icon span:nth-of-type(2) {
   flex-wrap: wrap;
   align-items: start;
   flex-wrap: wrap;
+  height: 100%;
+  margin-bottom: 11.1111111111rem;
 }
 
 .advertise__blocks {
@@ -804,26 +810,38 @@ header .header__menu-icon span:nth-of-type(2) {
   flex-wrap: wrap;
   width: 70%;
   align-items: center;
-  justify-content: space-evenly;
 }
 
 .advertise-first {
   position: relative;
-  max-width: 37.9444444444rem;
-  background-color: #180C1B;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  height: fit-content;
+  width: 69%;
+  background: #180C1B url(../img/flying-sushi.png) no-repeat right/contain;
+  height: 22rem;
+  overflow: hidden;
+}
+
+.advertise-two {
+  position: relative;
+  background: #FFDEA1 url(../img/sushi-brake.png) no-repeat center/cover;
+  height: 22rem;
+  width: 31%;
+  overflow: hidden;
+}
+
+.advertise-three {
+  position: relative;
+  background: #FFDEA1 url(../img/sushiki.png) no-repeat center/cover;
+  height: 22rem;
+  width: 45%;
+  height: 24.8888888889rem;
 }
 
 .advertise-four {
-  max-width: 30.3333333333rem;
+  width: 55%;
   display: flex;
   justify-content: space-around;
-  flex-wrap: wrap;
-  background-color: #25252D;
-  height: fit-content;
+  background: #25252D url(../img/sushi-plate-dark.png) no-repeat bottom/80%;
+  height: 24.8888888889rem;
 }
 .advertise-four p {
   font-weight: 700;
@@ -832,11 +850,23 @@ header .header__menu-icon span:nth-of-type(2) {
   margin: 1.3333333333rem 0;
 }
 
-.advertise-two {
+.advertise-five {
+  height: 46.8888888889rem;
+  background: url(../img/goodeats.png) no-repeat center/cover;
+  width: 30%;
+}
+
+.advertise-five__wrapper {
   position: relative;
-  max-width: fit-content;
-  background-color: #FFDEA1;
-  height: fit-content;
+  margin-top: 29rem;
+  padding: 40px 0;
+  max-width: 16.6666666667rem;
+}
+.advertise-five__wrapper h3 {
+  font-weight: 700;
+  font-size: 2.7777777778rem;
+  line-height: 3.3888888889rem;
+  margin-left: 1.3888888889rem;
 }
 
 .advertise-first-animation__position {
@@ -851,8 +881,7 @@ header .header__menu-icon span:nth-of-type(2) {
 
 .advertise-first__wrapper {
   margin: 1.6666666667rem 0 0 5.3888888889rem;
-  min-width: 13.0555555556rem;
-  width: 100%;
+  max-width: 13.0555555556rem;
 }
 .advertise-first__wrapper h3 {
   margin-top: 4rem;

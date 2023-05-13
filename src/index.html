@@ -5,74 +5,26 @@
   <body>
     @@include('html/header.html',{})
     <main class="scroll-container">
+      <!-- Main horizontal scroll section contains with product items -->
       <section class="content-section horisontal-scrolling">
         <div class="horisontal-scrolling__track">
           <div class="horisontal-scrolling__track-flex">
-            <div class="horisontal-scrolling__panel-wide">
-              <img
-                class="image"
-                src="@img/course-1.png"
-                width="100%"
-                style="object-fit: contain"
-                alt="seafood salad on black plate"
-              />
-            </div>
-
-            <div class="horisontal-scrolling__panel-wide">
-              <img
-                class="image"
-                src="@img/course-2.png"
-                width="100%"
-                style="object-fit: contain"
-                alt="seafood salad on black plate"
-              />
-            </div>
-            <div class="horisontal-scrolling__panel-wide">
-              <img
-                class="image"
-                src="@img/course-3.png"
-                width="100%"
-                style="object-fit: contain"
-                alt="seafood salad on black plate"
-              />
-            </div>
-            <div class="horisontal-scrolling__panel-wide">
-              <img
-                class="image"
-                src="@img/course-7.png"
-                width="100%"
-                style="object-fit: contain"
-                alt="seafood salad on black plate"
-              />
-            </div>
-            <div class="horisontal-scrolling__panel-wide">
-              <img
-                class="image"
-                src="@img/course-8.png"
-                width="100%"
-                style="object-fit: contain"
-                alt="seafood salad on black plate"
-              />
-            </div>
-            <div class="horisontal-scrolling__panel-wide">
-              <img
-                class="image"
-                src="@img/course-9.png"
-                width="100%"
-                style="object-fit: contain"
-                alt="seafood salad on black plate"
-              />
-            </div>
+            @@include('./html/scrollingItem.html',{'img':'@img/course-1.png'})
+            @@include('./html/scrollingItem.html',{'img':'@img/course-2.png'})
+            @@include('./html/scrollingItem.html',{'img':'@img/course-3.png'})
+            @@include('./html/scrollingItem.html',{'img':'@img/course-7.png'})
+            @@include('./html/scrollingItem.html',{'img':'@img/course-8.png'})
+            @@include('./html/scrollingItem.html',{'img':'@img/course-9.png'})
           </div>
         </div>
       </section>
+      <!-- Central heading and subscription -->
       <section class="content-section">
         <div class="wrapper">
           <div class="main">
             <div class="circle-animation__position">
               @@include('html/circle.html',{})
             </div>
-
             <h1 class="main__title">Sushi</h1>
             <p class="main__dishes"><span>sushi</span>, seafood & salads</p>
             <p class="main_about">
@@ -86,7 +38,7 @@
           </div>
         </div>
       </section>
-
+      <!-- Popular products list -->
       <section class="content-section">
         <div class="content-container">
           <h2>Popular Product</h2>
@@ -94,9 +46,11 @@
             @@include('html/productCard.html',{'product':'Ramen with corn','price':'$9.20','img':'@img/course-3.png'})
             @@include('html/productCard.html',{'product':'Ramen with pork','price':'$19.20','img':'@img/course-4.png'})
             @@include('html/productCard.html',{'product':'Ramen with chicken','price':'$12.40','img':'@img/course-5.png'})
-            @@include('html/productCard.html',{'product':'Ramen with veal','price':'$10.10','img':'@img/course-6.png'})    
+            @@include('html/productCard.html',{'product':'Ramen with veal','price':'$10.10','img':'@img/course-6.png'})
+          </div>
+        </div>
       </section>
-
+      <!-- Special offers -->
       <section class="content-section">
         <div class="content-container advertise">
           <div class="advertise__blocks">
@@ -110,8 +64,6 @@
                 </p>
                 <a class="advertise-arrow" href="#"></a>
               </div>
-
-              <img src="@img/flying-sushi.png" alt="sushi" />
               <div class="advertise-first-animation__position">
                 @@include('html/circleTransparent.html',{})
               </div>
@@ -122,35 +74,30 @@
               <div class="advertise-first-animation__position">
                 @@include('html/circleWhite.html',{})
               </div>
-              <img src="@img/sushi-brake.png" alt="sushi" width="100%" />
               <a class="advertise-arrow__dark" href="#"></a>
             </div>
 
-            <div class="advertise-two">
+            <div class="advertise-three">
               <span class="advertise__category__dark">category</span>
-
-              <img src="@img/sushiki.png" alt="sushi" width="100%" />
               <a class="advertise-arrow__dark" href="#"></a>
             </div>
 
             <div class="advertise-four">
               <p>hot sushi</p>
-
               <a class="advertise-arrow" href="#"></a>
-
-              <img src="@img/sushi-plate-dark.png" alt="sushi" />
             </div>
           </div>
 
-          <div class="advertise-two" style="max-width: 30%">
-            <span class="advertise__category__dark">category</span>
-
-            <img src="@img/goodeats.png" alt="sushi" width="100%" />
-            <a class="advertise-arrow__dark" href="#"></a>
+          <div class="advertise-five">
+            <div class="advertise-five__wrapper">
+              <span class="advertise__category__dark">category</span>
+              <h3>Exclusive</br>food</h3>
+              <a class="advertise-arrow__dark" href="#"></a>
+            </div>
           </div>
         </div>
       </section>
-
+      <!-- Another products list -->
       <section class="content-section">
         <div class="content-container">
           <h2>Our Production</h2>
@@ -158,14 +105,15 @@
             @@include('html/productCard.html',{'product':'Ramen with corn','price':'$9.20','img':'@img/course-7.png'})
             @@include('html/productCard.html',{'product':'Ramen with pork','price':'$19.20','img':'@img/course-8.png'})
             @@include('html/productCard.html',{'product':'Ramen with chicken','price':'$12.40','img':'@img/course-9.png'})
-            @@include('html/productCard.html',{'product':'Ramen with veal','price':'$10.10','img':'@img/course-6.png'})    
+            @@include('html/productCard.html',{'product':'Ramen with veal','price':'$10.10','img':'@img/course-6.png'})
             @@include('html/productCard.html',{'product':'Ramen with corn','price':'$9.20','img':'@img/course-7.png'})
             @@include('html/productCard.html',{'product':'Ramen with pork','price':'$19.20','img':'@img/course-9.png'})
             @@include('html/productCard.html',{'product':'Ramen with chicken','price':'$12.40','img':'@img/course-4.png'})
-            @@include('html/productCard.html',{'product':'Ramen with veal','price':'$10.10','img':'@img/course-1.png'})    
-          </section>
+            @@include('html/productCard.html',{'product':'Ramen with veal','price':'$10.10','img':'@img/course-1.png'})
+          </div>
+        </div>
+      </section>
     </main>
     <script src="js/app.min.js"></script>
-    <script src="/path/to/masonry.pkgd.min.js"></script>
   </body>
 </html>

@@ -10,9 +10,9 @@
     @return math.div($pxValue, 18px) * 1rem;
 }
 
-// *{
-//     outline: 1px dashed rgba(255, 0, 0, 0.349);
-// }
+*{
+    outline: 1px dashed rgba(255, 0, 0, 0.349);
+}
 //General and container settings
 body {
     position: relative;
@@ -71,6 +71,8 @@ body {
     flex-wrap: wrap;
     align-items: start;
     flex-wrap: wrap;
+    height: 100%;
+    margin-bottom: pxToRem(200px);
    
 }
 
@@ -79,42 +81,67 @@ body {
     flex-wrap: wrap;
     width: 70%;
     align-items: center;
-    justify-content: space-evenly;
+    
 }
 
 .advertise-first{
     position: relative;
-    max-width: pxToRem(683px);
-    background-color: $accent;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    height: fit-content;
+    width: 69%;
+    background: $accent url(@img/flying-sushi.png) no-repeat right/contain;
+    height: pxToRem(396px);
+    overflow: hidden;
 }
 
+.advertise-two {
+    position: relative;
+    background: $lightest url(@img/sushi-brake.png) no-repeat center/cover;
+    height: pxToRem(396px);
+    width: 31%;
+    overflow: hidden;
+}
+.advertise-three {
+    position: relative;
+    background: $lightest url(@img/sushiki.png) no-repeat center/cover;
+    height: pxToRem(396px);
+    width: 45%;
+    height: pxToRem(448px);
+}
 .advertise-four {
-    max-width: pxToRem(546px);
+    width: 55%;
     display: flex;
     justify-content: space-around;
-    flex-wrap: wrap;
-    background-color: $contrast2;
-    height: fit-content;
-    // padding: pxToRem(25px);
+
+    background: $contrast2 url(@img/sushi-plate-dark.png) no-repeat bottom/80%;
+    height: pxToRem(448px);
 
     p {
         font-weight: 700;
         font-size: pxToRem(20px);
         line-height: pxToRem(24px);
-        margin: pxToRem(24px) 0;
-        
+        margin: pxToRem(24px) 0; 
     }
 }
 
-.advertise-two {
+.advertise-five{
+    height: pxToRem(844px);
+    background: url(@img/goodeats.png) no-repeat center/cover;
+    width: 30%;
+}
+
+.advertise-five__wrapper{
     position: relative;
-    max-width: fit-content;
-    background-color: $lightest;
-    height: fit-content;
+    margin-top:pxToRem(522px) ;
+    padding: 40px 0;
+    max-width: pxToRem(300px);
+ 
+  h3{
+        font-weight: 700;
+        font-size:pxToRem(50px) ;
+        line-height:pxToRem(61px) ;
+        margin-left:pxToRem(25px) ;
+
+        
+  }
 }
 
 .advertise-first-animation__position{
@@ -127,12 +154,9 @@ body {
     transform: translate(-50%,-50%);
 }
 
-
-
 .advertise-first__wrapper{
     margin: pxToRem(30px) 0 0 pxToRem(97px) ;
-    min-width: pxToRem(235px);
-    width: 100%;
+    max-width: pxToRem(235px);
 
     h3{
         margin-top: pxToRem(72px);
