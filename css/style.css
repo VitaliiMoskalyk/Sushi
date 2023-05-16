@@ -751,9 +751,15 @@ header .header__menu-icon span:nth-of-type(2) {
   display: flex;
   flex-basis: 20%;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
   background: linear-gradient(180deg, transparent 25%, #25252D 25%);
   padding: 1.7222222222rem;
+}
+.card div {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 .card .card__title {
   font-weight: 400;
