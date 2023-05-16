@@ -1,0 +1,56 @@
+#theme-switch {
+    position: absolute;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    // clip: rect(1px, 1px, 1px, 1px);
+}
+
+body[data-theme='dark'] {
+    -webkit-overflow-scrolling: touch;
+        background-color: $background;
+        color: $fonts;
+        font-family: Cormorant;
+        // overflow-scrolling: touch;
+        scroll-behavior: smooth;
+
+    .switch-label::before {
+        content: $light-switch-icon;
+        font-size: 40px;
+        transition: text-shadow .2s;
+    }
+
+    .switch-label::after {
+        content: $dark-switch-text;
+        color: $dark-switch-shadow;
+
+        @media screen and (max-width:600px) {
+            content: '';
+        }
+    }
+
+    #theme-switch:focus .switch-label::before,
+    .switch-label:hover::before {
+        text-shadow: 0 0 15px $dark-switch-shadow;
+    }
+}
+
+.switch-label::before {
+    content: $dark-switch-icon;
+    font-size: 40px;
+    transition: text-shadow .2s;
+}
+
+.switch-label::after {
+    content: $light-switch-text;
+    color: $light-switch-shadow;
+
+    @media screen and (max-width:600px) {
+        content: '';
+    }
+}
+
+#theme-switch:focus .switch-label::before,
+.switch-label:hover::before {
+    text-shadow: 0 0 15px $light-switch-shadow;
+}

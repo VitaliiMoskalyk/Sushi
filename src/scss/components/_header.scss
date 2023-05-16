@@ -34,13 +34,14 @@ header {
                 opacity: 1;
                 transition: $bezier;
                 transform: translateX(0);
+                visibility: visible;
             }
         }
 
         p {
             transform: translateX(-100px);
             opacity: 0;
-            
+            visibility: hidden;
             font-weight: 400;
             font-size: pxToRem(15px);
             line-height: pxToRem(18px);

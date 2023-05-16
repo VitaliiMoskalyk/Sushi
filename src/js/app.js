@@ -1,5 +1,6 @@
 import * as flsFunctions from "./modules/functions.js";
 import { gsap, ScrollTrigger } from "gsap/all.js";
+import themeSwitch from "./modules/themeSwitch.js";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -35,3 +36,20 @@ tracks.forEach((track, i) => {
 });
 
 flsFunctions.isWebP();
+
+const inputName = document.querySelector(".form-name_input");
+const namePlaceholder = document.querySelector(".form-name-title");
+
+inputName.addEventListener("mouseenter", (e) => handleInput(e));
+inputName.addEventListener("mouseleave", (e) => handleInputLeave(e));
+function handleInput(input) {
+  namePlaceholder.style.bottom = "20px";
+  console.dir(input);
+}
+
+function handleInputLeave(input) {
+  if (input.target.value === "") namePlaceholder.style.bottom = "0";
+}
+
+//theme switcher
+themeSwitch();

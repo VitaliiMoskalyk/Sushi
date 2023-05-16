@@ -1,10 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" >
   @@include('html/head.html',{ "title":"Sushi" })
 
   <body>
+    
+  
     @@include('html/header.html',{})
+    
     <main class="scroll-container">
+      
       <!-- Main horizontal scroll section contains with product items -->
       <section class="content-section horisontal-scrolling">
         <div class="horisontal-scrolling__track">
@@ -33,7 +37,7 @@
             </p>
 
             <div class="main__button-wrapper">
-              <a href="#" class="main__button">catalog</a>
+              <a href="#catalog" class="main__button">catalog</a>
             </div>
           </div>
         </div>
@@ -98,7 +102,7 @@
         </div>
       </section>
       <!-- Another products list -->
-      <section class="content-section">
+      <section class="content-section" id="catalog">
         <div class="content-container">
           <h2>Our Production</h2>
           <div class="popular-cards__wrapper">
@@ -113,7 +117,34 @@
           </div>
         </div>
       </section>
-    </main>
+
+      <section class="content-section discount-wrapper">
+        <div class="discount">
+          <div>
+            <h3>Discount on all seafood</h3>
+            <p>PROMO CODE <span>seafood</span></p>
+          </div>
+       
+          
+        </div>
+        <div>
+          
+          <img src="@img/fish&lemons.png" alt="fish" width="100%" height="388px" class="fish">
+        
+        </div>
+        <div class="form-wrapper">
+          <h2 class="form-heading">subscribe to news</h2>
+          <form action=""  class="form" >
+              <input placeholder="Name" id="GET-name" type="text" name="name" class="form-name_input">
+              <input placeholder="Email" id="GET-email" type="email" name="email" class="form-email_input">
+              <input type="submit" value="SUBSCRIBE"  class="main__button">
+          </form>
+
+        </div>
+      </section>
+        
+    </main> 
     <script src="js/app.min.js"></script>
+   
   </body>
 </html>

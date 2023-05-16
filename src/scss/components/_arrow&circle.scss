@@ -1,0 +1,38 @@
+//Arrow and circle, which change color when crossed
+.advertise-arrow,
+%advertise-arrow {
+    position: relative;
+    width: pxToRem(20px);
+    height: pxToRem(20px);
+    margin: pxToRem(25px);
+    border-radius: 50%;
+    background-color: $lightest;
+    float: right;
+
+    &:hover,
+    &:focus {
+        &::before {
+            top: 50%;
+            left: -50%;
+        }
+    }
+
+    &::before {
+        content: url(../img/svg/arrow.svg);
+        position: absolute;
+        top: 50%;
+        left: -80%;
+        transform: translate(-50%, -50%);
+        margin-right: pxToRem(11px);
+        mix-blend-mode: difference;
+    }
+}
+
+.advertise-arrow__dark {
+    @extend %advertise-arrow;
+    background-color: $accent;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+}

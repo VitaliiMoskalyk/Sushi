@@ -10,6 +10,10 @@
     justify-content: end;
     height: fit-content;
     margin-top: pxToRem(208px);
+    @media screen and (max-width:600px) {
+        position: relative;
+        margin-bottom: pxToRem(40px);
+    }
 }
 
 .main {
@@ -49,7 +53,7 @@
     position: absolute;
     left: -30%;
     top:-30%;
-   
+
     
 }
 
@@ -67,7 +71,7 @@
     font-size: pxToRem(17px);
     line-height: pxToRem(21px);
     background-color: $lightest;
-
+    cursor: pointer;
     padding: pxToRem(15px) pxToRem(20px);
     color: $background;
 

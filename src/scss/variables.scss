@@ -1,15 +1,17 @@
-$lightest:#FFDEA1;
-$contrast:#575757;
-$accent:#180C1B;
-$contrast2:#25252D;
-$fresh:#43613F;
-
-$background:#060606;
-
-$fonts:#FFFFFF;
-$fontsSecondary:#D7D7D7;
-
-$bezier: all 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+        $lightest: #FFDEA1;
+        $contrast: #575757;
+        $accent: #180C1B;
+        $contrast2: #25252D;
+        $fresh: #43613F;
+     
+        $light:red;
+        $background:  #060606;
+        $backgroundLight: #4441415e;
+    
+        $fonts: #FFFFFF;
+        $fontsSecondary: #D7D7D7;
+    
+        $bezier: all 2s cubic-bezier(0.075, 0.82, 0.165, 1);
 
 //circles animation
 @keyframes round {
@@ -22,3 +24,15 @@ $bezier: all 2s cubic-bezier(0.075, 0.82, 0.165, 1);
     }
 
 }
+
+/* Light mode */
+$light-switch-shadow: $contrast;
+$light-switch-icon: "⚫";
+$light-switch-text: "dark mode?";
+
+/* Dark mode */
+$dark-switch-shadow: $lightest;
+$dark-switch-icon: "⚪";
+$dark-switch-text: "light mode?";
+
+

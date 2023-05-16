@@ -1,0 +1,53 @@
+.form-wrapper {
+    width: 40%;
+    margin-left: pxToRem(96px);
+    margin-bottom: pxToRem(40px);
+    @media screen and (max-width:600px) {
+        margin-left: 0;
+       
+    }
+        @media screen and (max-width:450px) {
+            width: 100%;
+            padding: pxToRem(20px);
+        }
+}
+
+.form {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: pxToRem(63px);
+    @media screen and (max-width:450px) {
+            width: 100%;
+            
+    
+        }
+}
+
+.form-heading {
+    font-weight: 700;
+    font-size: pxToRem(30px);
+    line-height: pxToRem(36px);
+    margin-bottom: pxToRem(31px);
+}
+
+input {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(213, 213, 213, 0.45);
+    outline: none;
+}
+
+input::placeholder {
+    font-weight: 400;
+    font-size: pxToRem(18px);
+    line-height: pxToRem(22px);
+    color: $fonts;
+}
+
+.form-name_input,
+.form-email_input {
+    width: 100%;
+    color: $fonts;
+}

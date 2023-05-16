@@ -1,0 +1,141 @@
+.advertise {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: start;
+    flex-wrap: wrap;
+    height: 100%;
+    margin-bottom: pxToRem(200px);
+}
+
+.advertise__blocks {
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+    align-items: center;
+
+    @media screen and (max-width:1500px) {
+        width: 100%;
+    }
+}
+
+.advertise-first {
+    position: relative;
+    width: 69%;
+    background: $accent url(@img/flying-sushi.png) no-repeat right/contain;
+    height: pxToRem(396px);
+    overflow: hidden;
+
+    @media screen and (max-width:500px) {
+        width: 100%;
+    }
+}
+
+.advertise-two {
+    position: relative;
+    background: $lightest url(@img/sushi-brake.png) no-repeat center/cover;
+    height: pxToRem(396px);
+    width: 31%;
+    overflow: hidden;
+
+    @media screen and (max-width:500px) {
+        width: 100%;
+    }
+}
+
+.advertise-three {
+    position: relative;
+    background: $lightest url(@img/sushiki.png) no-repeat center/cover;
+    width: 45%;
+    height: pxToRem(448px);
+
+    @media screen and (max-width:500px) {
+        width: 100%;
+    }
+}
+
+.advertise-four {
+    width: 55%;
+    display: flex;
+    justify-content: space-around;
+
+    background: $contrast2 url(@img/sushi-plate-dark.png) no-repeat bottom/80%;
+    height: pxToRem(448px);
+
+    @media screen and (max-width:500px) {
+        width: 100%;
+    }
+
+    p {
+        font-weight: 700;
+        font-size: pxToRem(20px);
+        line-height: pxToRem(24px);
+        margin: pxToRem(24px) 0;
+    }
+}
+
+.advertise-five {
+    height: pxToRem(844px);
+    background: url(@img/goodeats.png) no-repeat center/cover;
+    width: 30%;
+
+    @media screen and (max-width:1500px) {
+        width: 100%;
+
+    }
+
+    @media screen and (max-width:600px) {
+        width: 100%;
+        height: pxToRem(444px);
+    }
+}
+
+.advertise-five__wrapper {
+    position: relative;
+    margin-top: pxToRem(522px);
+    padding: 40px 0;
+    max-width: pxToRem(300px);
+
+    @media screen and (max-width:600px) {
+        margin-top: pxToRem(22px);
+    }
+
+    h3 {
+        font-weight: 700;
+        font-size: pxToRem(50px);
+        line-height: pxToRem(61px);
+        margin-left: pxToRem(25px);
+
+
+    }
+}
+
+.advertise-first-animation__position {
+    position: absolute;
+    width: pxToRem(249px);
+    height: pxToRem(249px);
+    z-index: 2;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.advertise-first__wrapper {
+    margin: pxToRem(30px) 0 0 pxToRem(97px);
+    max-width: pxToRem(235px);
+
+    h3 {
+        margin-top: pxToRem(72px);
+        margin-bottom: pxToRem(17px);
+        font-weight: 700;
+        font-size: pxToRem(45px);
+        line-height: pxToRem(54px);
+    }
+
+    p {
+        margin-bottom: pxToRem(72px);
+        font-weight: 400;
+        font-size: pxToRem(15px);
+        line-height: pxToRem(18px);
+    }
+
+}

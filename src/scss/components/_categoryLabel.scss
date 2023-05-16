@@ -1,0 +1,22 @@
+   //Category label
+   %advertise__category,
+   .advertise__category {
+       padding: pxToRem(4px) pxToRem(25px);
+       font-weight: 400;
+       width: fit-content;
+       font-size: pxToRem(15px);
+       line-height: pxToRem(18px);
+       text-align: center;
+       color: $accent;
+       background-color: $lightest;
+   }
+
+   .advertise__category__dark {
+       @extend %advertise__category;
+       color: $fonts;
+       background-color: $background;
+       margin: pxToRem(14px) pxToRem(24px);
+       position: absolute;
+       top: 0;
+       left: 0;
+   }

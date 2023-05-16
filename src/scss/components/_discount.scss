@@ -1,0 +1,61 @@
+.discount-wrapper {
+    display: flex;
+    flex-direction: row;
+
+    @media screen and (max-width:1500px) {
+        flex-wrap: wrap;
+        gap: pxToRem(20px);
+    }
+
+    @media screen and (max-width:450px) {
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.discount {
+    position: relative;
+    width: 40%;
+    padding-bottom: pxToRem(40px);
+    background: url(@img/chef.png) no-repeat right/contain, url(@img/roll.png) no-repeat left top/20%, $contrast2;
+
+    @media screen and (max-width:1500px) {
+        width: 100%;
+
+    }
+
+    div {
+        font-weight: 700;
+        font-size: pxToRem(40px);
+        line-height: pxToRem(48px);
+        max-width: pxToRem(236px);
+        margin-top: pxToRem(123px);
+        margin-left: pxToRem(128px);
+
+        @media screen and (max-width:1500px) {
+            margin: 0 auto;
+        }
+
+        @media screen and (max-width:440px) {
+            font-size: pxToRem(12px);
+            line-height: pxToRem(17px);
+        }
+
+        p {
+            font-weight: 400;
+            font-size: pxToRem(14px);
+            line-height: pxToRem(17px);
+            margin-top: pxToRem(89px);
+
+
+            span {
+                font-size: pxToRem(13px);
+                line-height: pxToRem(16px);
+                color: $background;
+                padding: pxToRem(1px) pxToRem(21px);
+                background-color: $lightest;
+                margin-left: pxToRem(55px);
+            }
+        }
+    }
+}

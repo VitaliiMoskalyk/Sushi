@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" >
   <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -10,6 +10,8 @@
 
 
   <body>
+    
+  
     <header>
   <a href="#" class="header__menu">
     <div class="header__menu-icon">
@@ -17,7 +19,11 @@
       <span></span>
       <span></span>
     </div>
-    <p>menu</p>
+    <p>
+      <input type="checkbox" id="theme-switch" />
+
+      <label for="theme-switch" class="switch-label"></label>
+    </p>
   </a>
 
   <a href="tel:+380500000000" class="header__menu">
@@ -47,7 +53,9 @@
   </a>
 </header>
 
+    
     <main class="scroll-container">
+      
       <!-- Main horizontal scroll section contains with product items -->
       <section class="content-section horisontal-scrolling">
         <div class="horisontal-scrolling__track">
@@ -135,7 +143,7 @@
             </p>
 
             <div class="main__button-wrapper">
-              <a href="#" class="main__button">catalog</a>
+              <a href="#catalog" class="main__button">catalog</a>
             </div>
           </div>
         </div>
@@ -147,46 +155,74 @@
           <div class="popular-cards__wrapper">
             <div class="card">
   <span class="card__sidebar">sale</span>
-  <img src="img/course-3.png" alt="sushi" style="object-fit: contain" height="100%" />
-  <h3 class="card__title">Ramen with corn</h3>
-  <p>&#11088;&#11088;&#11088;&#11088;</p>
-  <p class="card__price">$9.20</p>
-  <button class="card__button" type="button">
-    <img src="img/svg/cart.svg" alt="sushi" />ADD TO CART
-  </button>
+  <img
+    src="img/course-3.png"
+    alt="sushi"
+    style="object-fit: contain"
+    height="fit-content"
+  />
+  <div>
+    <h3 class="card__title">Ramen with corn</h3>
+    <p>&#11088;&#11088;&#11088;&#11088;</p>
+    <p class="card__price">$9.20</p>
+    <button class="card__button" type="button">
+      <img src="img/svg/cart.svg" alt="sushi" />ADD TO CART
+    </button>
+  </div>
 </div>
 
             <div class="card">
   <span class="card__sidebar">sale</span>
-  <img src="img/course-4.png" alt="sushi" style="object-fit: contain" height="100%" />
-  <h3 class="card__title">Ramen with pork</h3>
-  <p>&#11088;&#11088;&#11088;&#11088;</p>
-  <p class="card__price">$19.20</p>
-  <button class="card__button" type="button">
-    <img src="img/svg/cart.svg" alt="sushi" />ADD TO CART
-  </button>
+  <img
+    src="img/course-4.png"
+    alt="sushi"
+    style="object-fit: contain"
+    height="fit-content"
+  />
+  <div>
+    <h3 class="card__title">Ramen with pork</h3>
+    <p>&#11088;&#11088;&#11088;&#11088;</p>
+    <p class="card__price">$19.20</p>
+    <button class="card__button" type="button">
+      <img src="img/svg/cart.svg" alt="sushi" />ADD TO CART
+    </button>
+  </div>
 </div>
 
             <div class="card">
   <span class="card__sidebar">sale</span>
-  <img src="img/course-5.png" alt="sushi" style="object-fit: contain" height="100%" />
-  <h3 class="card__title">Ramen with chicken</h3>
-  <p>&#11088;&#11088;&#11088;&#11088;</p>
-  <p class="card__price">$12.40</p>
-  <button class="card__button" type="button">
-    <img src="img/svg/cart.svg" alt="sushi" />ADD TO CART
-  </button>
+  <img
+    src="img/course-5.png"
+    alt="sushi"
+    style="object-fit: contain"
+    height="fit-content"
+  />
+  <div>
+    <h3 class="card__title">Ramen with chicken</h3>
+    <p>&#11088;&#11088;&#11088;&#11088;</p>
+    <p class="card__price">$12.40</p>
+    <button class="card__button" type="button">
+      <img src="img/svg/cart.svg" alt="sushi" />ADD TO CART
+    </button>
+  </div>
 </div>
 
             <div class="card">
   <span class="card__sidebar">sale</span>
-  <img src="img/course-6.png" alt="sushi" style="object-fit: contain" height="100%" />
-  <h3 class="card__title">Ramen with veal</h3>
-  <p>&#11088;&#11088;&#11088;&#11088;</p>
-  <p class="card__price">$10.10</p>
-  <button class="card__button" type="button">
-    <img src="img/svg/cart.svg" alt="sushi" />ADD TO CART
-  </button>
+  <img
+    src="img/course-6.png"
+    alt="sushi"
+    style="object-fit: contain"
+    height="fit-content"
+  />
+  <div>
+    <h3 class="card__title">Ramen with veal</h3>
+    <p>&#11088;&#11088;&#11088;&#11088;</p>
+    <p class="card__price">$10.10</p>
+    <button class="card__button" type="button">
+      <img src="img/svg/cart.svg" alt="sushi" />ADD TO CART
+    </button>
+  </div>
 </div>
 
           </div>
@@ -250,102 +286,185 @@
         </div>
       </section>
       <!-- Another products list -->
-      <section class="content-section">
+      <section class="content-section" id="catalog">
         <div class="content-container">
           <h2>Our Production</h2>
           <div class="popular-cards__wrapper">
             <div class="card">
   <span class="card__sidebar">sale</span>
-  <img src="img/course-7.png" alt="sushi" style="object-fit: contain" height="100%" />
-  <h3 class="card__title">Ramen with corn</h3>
-  <p>&#11088;&#11088;&#11088;&#11088;</p>
-  <p class="card__price">$9.20</p>
-  <button class="card__button" type="button">
-    <img src="img/svg/cart.svg" alt="sushi" />ADD TO CART
-  </button>
+  <img
+    src="img/course-7.png"
+    alt="sushi"
+    style="object-fit: contain"
+    height="fit-content"
+  />
+  <div>
+    <h3 class="card__title">Ramen with corn</h3>
+    <p>&#11088;&#11088;&#11088;&#11088;</p>
+    <p class="card__price">$9.20</p>
+    <button class="card__button" type="button">
+      <img src="img/svg/cart.svg" alt="sushi" />ADD TO CART
+    </button>
+  </div>
 </div>
 
             <div class="card">
   <span class="card__sidebar">sale</span>
-  <img src="img/course-8.png" alt="sushi" style="object-fit: contain" height="100%" />
-  <h3 class="card__title">Ramen with pork</h3>
-  <p>&#11088;&#11088;&#11088;&#11088;</p>
-  <p class="card__price">$19.20</p>
-  <button class="card__button" type="button">
-    <img src="img/svg/cart.svg" alt="sushi" />ADD TO CART
-  </button>
+  <img
+    src="img/course-8.png"
+    alt="sushi"
+    style="object-fit: contain"
+    height="fit-content"
+  />
+  <div>
+    <h3 class="card__title">Ramen with pork</h3>
+    <p>&#11088;&#11088;&#11088;&#11088;</p>
+    <p class="card__price">$19.20</p>
+    <button class="card__button" type="button">
+      <img src="img/svg/cart.svg" alt="sushi" />ADD TO CART
+    </button>
+  </div>
 </div>
 
             <div class="card">
   <span class="card__sidebar">sale</span>
-  <img src="img/course-9.png" alt="sushi" style="object-fit: contain" height="100%" />
-  <h3 class="card__title">Ramen with chicken</h3>
-  <p>&#11088;&#11088;&#11088;&#11088;</p>
-  <p class="card__price">$12.40</p>
-  <button class="card__button" type="button">
-    <img src="img/svg/cart.svg" alt="sushi" />ADD TO CART
-  </button>
+  <img
+    src="img/course-9.png"
+    alt="sushi"
+    style="object-fit: contain"
+    height="fit-content"
+  />
+  <div>
+    <h3 class="card__title">Ramen with chicken</h3>
+    <p>&#11088;&#11088;&#11088;&#11088;</p>
+    <p class="card__price">$12.40</p>
+    <button class="card__button" type="button">
+      <img src="img/svg/cart.svg" alt="sushi" />ADD TO CART
+    </button>
+  </div>
 </div>
 
             <div class="card">
   <span class="card__sidebar">sale</span>
-  <img src="img/course-6.png" alt="sushi" style="object-fit: contain" height="100%" />
-  <h3 class="card__title">Ramen with veal</h3>
-  <p>&#11088;&#11088;&#11088;&#11088;</p>
-  <p class="card__price">$10.10</p>
-  <button class="card__button" type="button">
-    <img src="img/svg/cart.svg" alt="sushi" />ADD TO CART
-  </button>
+  <img
+    src="img/course-6.png"
+    alt="sushi"
+    style="object-fit: contain"
+    height="fit-content"
+  />
+  <div>
+    <h3 class="card__title">Ramen with veal</h3>
+    <p>&#11088;&#11088;&#11088;&#11088;</p>
+    <p class="card__price">$10.10</p>
+    <button class="card__button" type="button">
+      <img src="img/svg/cart.svg" alt="sushi" />ADD TO CART
+    </button>
+  </div>
 </div>
 
             <div class="card">
   <span class="card__sidebar">sale</span>
-  <img src="img/course-7.png" alt="sushi" style="object-fit: contain" height="100%" />
-  <h3 class="card__title">Ramen with corn</h3>
-  <p>&#11088;&#11088;&#11088;&#11088;</p>
-  <p class="card__price">$9.20</p>
-  <button class="card__button" type="button">
-    <img src="img/svg/cart.svg" alt="sushi" />ADD TO CART
-  </button>
+  <img
+    src="img/course-7.png"
+    alt="sushi"
+    style="object-fit: contain"
+    height="fit-content"
+  />
+  <div>
+    <h3 class="card__title">Ramen with corn</h3>
+    <p>&#11088;&#11088;&#11088;&#11088;</p>
+    <p class="card__price">$9.20</p>
+    <button class="card__button" type="button">
+      <img src="img/svg/cart.svg" alt="sushi" />ADD TO CART
+    </button>
+  </div>
 </div>
 
             <div class="card">
   <span class="card__sidebar">sale</span>
-  <img src="img/course-9.png" alt="sushi" style="object-fit: contain" height="100%" />
-  <h3 class="card__title">Ramen with pork</h3>
-  <p>&#11088;&#11088;&#11088;&#11088;</p>
-  <p class="card__price">$19.20</p>
-  <button class="card__button" type="button">
-    <img src="img/svg/cart.svg" alt="sushi" />ADD TO CART
-  </button>
+  <img
+    src="img/course-9.png"
+    alt="sushi"
+    style="object-fit: contain"
+    height="fit-content"
+  />
+  <div>
+    <h3 class="card__title">Ramen with pork</h3>
+    <p>&#11088;&#11088;&#11088;&#11088;</p>
+    <p class="card__price">$19.20</p>
+    <button class="card__button" type="button">
+      <img src="img/svg/cart.svg" alt="sushi" />ADD TO CART
+    </button>
+  </div>
 </div>
 
             <div class="card">
   <span class="card__sidebar">sale</span>
-  <img src="img/course-4.png" alt="sushi" style="object-fit: contain" height="100%" />
-  <h3 class="card__title">Ramen with chicken</h3>
-  <p>&#11088;&#11088;&#11088;&#11088;</p>
-  <p class="card__price">$12.40</p>
-  <button class="card__button" type="button">
-    <img src="img/svg/cart.svg" alt="sushi" />ADD TO CART
-  </button>
+  <img
+    src="img/course-4.png"
+    alt="sushi"
+    style="object-fit: contain"
+    height="fit-content"
+  />
+  <div>
+    <h3 class="card__title">Ramen with chicken</h3>
+    <p>&#11088;&#11088;&#11088;&#11088;</p>
+    <p class="card__price">$12.40</p>
+    <button class="card__button" type="button">
+      <img src="img/svg/cart.svg" alt="sushi" />ADD TO CART
+    </button>
+  </div>
 </div>
 
             <div class="card">
   <span class="card__sidebar">sale</span>
-  <img src="img/course-1.png" alt="sushi" style="object-fit: contain" height="100%" />
-  <h3 class="card__title">Ramen with veal</h3>
-  <p>&#11088;&#11088;&#11088;&#11088;</p>
-  <p class="card__price">$10.10</p>
-  <button class="card__button" type="button">
-    <img src="img/svg/cart.svg" alt="sushi" />ADD TO CART
-  </button>
+  <img
+    src="img/course-1.png"
+    alt="sushi"
+    style="object-fit: contain"
+    height="fit-content"
+  />
+  <div>
+    <h3 class="card__title">Ramen with veal</h3>
+    <p>&#11088;&#11088;&#11088;&#11088;</p>
+    <p class="card__price">$10.10</p>
+    <button class="card__button" type="button">
+      <img src="img/svg/cart.svg" alt="sushi" />ADD TO CART
+    </button>
+  </div>
 </div>
 
           </div>
         </div>
       </section>
-    </main>
+
+      <section class="content-section discount-wrapper">
+        <div class="discount">
+          <div>
+            <h3>Discount on all seafood</h3>
+            <p>PROMO CODE <span>seafood</span></p>
+          </div>
+       
+          
+        </div>
+        <div>
+          
+          <img src="img/fish&lemons.png" alt="fish" width="100%" height="388px" class="fish">
+        
+        </div>
+        <div class="form-wrapper">
+          <h2 class="form-heading">subscribe to news</h2>
+          <form action=""  class="form" >
+              <input placeholder="Name" id="GET-name" type="text" name="name" class="form-name_input">
+              <input placeholder="Email" id="GET-email" type="email" name="email" class="form-email_input">
+              <input type="submit" value="SUBSCRIBE"  class="main__button">
+          </form>
+
+        </div>
+      </section>
+        
+    </main> 
     <script src="js/app.min.js"></script>
+   
   </body>
 </html>

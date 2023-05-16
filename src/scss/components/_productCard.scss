@@ -4,11 +4,17 @@
    
     flex-basis: 20%;
     flex-direction: column;
+    justify-content: space-between;
     align-items: center;
     // max-width: pxToRem(241px);
     background: linear-gradient(180deg, transparent 25%, $contrast2 25%);
     padding: pxToRem(31px);
 
+    div{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
     .card__title {
         font-weight: 400;
         font-size: pxToRem(15px);
