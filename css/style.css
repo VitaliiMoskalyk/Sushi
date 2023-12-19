@@ -555,18 +555,18 @@ body[data-theme=dark] .switch-label:hover::before {
 
 .switch-label::after {
   content: "dark mode?";
-  color: #575757;
+  color: #797676;
 }
 
 #theme-switch:focus .switch-label::before,
 .switch-label:hover::before {
-  text-shadow: 0 0 15px #575757;
+  text-shadow: 0 0 15px #797676;
 }
 
 body {
   -webkit-overflow-scrolling: touch;
-  background-color: rgba(68, 65, 65, 0.368627451);
-  color: #575757;
+  background-color: rgba(184, 181, 181, 0.368627451);
+  color: #797676;
   font-family: Cormorant;
   scroll-behavior: smooth;
 }
@@ -863,8 +863,8 @@ header .header__menu-icon span:nth-of-type(2) {
   height: 13.1666666667rem;
   background-color: #25252D;
   border-radius: 50%;
-  border: 1px solid #575757;
-  border: 1px solid #575757;
+  border: 1px solid #797676;
+  border: 1px solid #797676;
 }
 
 .circle_animation :nth-child(3),
